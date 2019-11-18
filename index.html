@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sonho-de-Pudim</title>
+    <link rel="stylesheet" href="pudim.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body >
+   <div bgcolor="white"class="topinho">
+        <div class="nome">
+                <h2 style="color:lightblue;text-align: center">Sonho de Pudim</h2></div>
+                <div class="sub">
+                <p style="color:lightsalmon;text-align: center">Os melhores pudins de sabores variados</p><br><br></div>
+          
+            <nav id="navpudim">
+                <div class="topnav" id="navbar">
+                    <a id="home"class="active" href="#home">Home</a>
+                    <a href="#sobre-nos">Sobre nós</a>
+                    <a href="#sabores">Sabores</a>
+                    <a href="./pedido.html">Faça seu pedido</a>
+                    <a href="./cadastro.html">Cadastro</a>
+                    <a href="./login.html">Login</a>
+        
+                </div>
+        
+            </nav>
+   </div>
+    <div class = "slideshow"><br>
+        <div class = "mySlides">
+         
+            <img src="pudding-702960_1280.jpg" style = "width:100%">
+         
+        </div>
+
+        <div class="mySlides">
+     
+            <img src="sweet-pudding.jpg" style="width:100%">
+         
+        </div>
+
+        <div class= "mySlides">
+     
+            <img src="caramel-1958358_1280.jpg" style="width:100%">
+    
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <div id="sobre-nos" class="sobre-nos";style="padding-left:16px"><br><br>
+        <h2>Sobre nós</h2>
+        </div>
+     <div class="conteudo-sobrenos">
+        <p>Nossa empresa é especializada em fazer os melhores pudins,
+            com ingredientes selecionados e de sabores variados, tudo feito com amor e muita dedicação, para sua melhor
+            experiência com nossos pudins.
+        </p>
+    </div>
+    <br><br>
+    <div id="sabores" class="sabores">
+        <h2>Nossos sabores</h2>
+    </div>
+    <br>
+    <div class="conteudo-sabores1">
+        <ul>
+            <li>Baunilha</li>
+            <li>Café </li>
+            <li>Chocolate Belga</li>
+            <li>Coco</li>
+            <li>Doce de Leite</li>
+            
+        </ul>
+    </div>
+    <div class="conteudo-sabores2">
+            <li>Frutas Vermelhas</li>
+            <li>Leite Condensado</li>
+            <li>Leite Ninho</li>
+            <li>Maracujá</li>
+            <li>Matchá</li>
+    </div>
+    <div class="conteudo-sabores3">
+        <li>Nozes</li>
+        <li>Pão de mel</li>
+        <li>Pistache</li>
+        <li>Sem lactose</li>
+        <li>Vegano</li>
+    </div>
+    <br><br>
+
+    </div>
+     
+</body>
+<footer>
+ <div class="topo">
+     <a href="#home">Voltar ao topo</a>
+ </div>
+</footer>
+</html>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>

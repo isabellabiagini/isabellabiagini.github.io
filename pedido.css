@@ -1,0 +1,35 @@
+*{padding:0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;}
+ .topnav {
+        background-color: lightsalmon;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        width: 100%;
+          }
+    
+          
+    .topnav a {
+             float:left;
+             color: rgb(253, 238, 236);
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             font-size: 17px;
+    
+          }
+    .topnav.a.active {
+        background-color: darksalmon;
+        
+    }
+    .topnav a:hover {
+        background-color: lightcoral;
+        color: rgb(250, 219, 207);
+      }
+      .pedido-titulo{
+        text-align: center;
+        color: lightsalmon;
+        margin-top: 40px;
+        font-size: 30px;
+      }

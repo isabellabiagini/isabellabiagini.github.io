@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body bgcolor="seashell">
+    
+    <nav id="navpudim">
+        <div class="topnav" id="navbar">
+            <a id="home" class="active" href="./pudim.html">Home</a>
+            <a href="./pudim.html#sobre-nos">Sobre nós</a>
+            <a href="./pudim.html#sabores">Sabores</a>
+            <a href="./pedido.html">Faça seu pedido</a>
+            <a href="./cadastro.html">Cadastro</a>
+            <a href="./login.html">Login</a>
+
+        </div>
+    </nav>
+    
+    <div class="cadastro-box">
+            <div class="cadastro">
+                    <h2>Cadastre-se</h2>
+            </div><br>
+        
+        <div class="cadastro-conteudo">
+            Nome:<br> <input type="text" id="nome" class="nome"><br>
+            Senha:<br> <input type="password" id="senha" class="senha"><br>
+            Confirmação de senha: <br><input type="password" id="confirma" class="confirma"><br>
+            E-mail:<br> <input type="text" id="email" class="email"><br>
+            Telefone:<br> <input type="text" id="telefone" class="telefone"><br>
+            CEP:<br> <input type="text" id="CEP" class="CEP"><br>
+        </div>
+        <br>
+            <button class = "bt"onclick="cadastro()" >Cadastre-se</button>
+      
+    </div>
+    
+</body>
+
+</html>
+
+<script> 
+function cadastro() {
+    if (email.value.endsWith('@gmail.com') && email.value != '@gmail.com' && senha.value==confirma.value ) {
+        alert('Cadastro válido!');
+    } else {
+        alert('Cadastro inválido!');
+    }
+}
+  
+</script>

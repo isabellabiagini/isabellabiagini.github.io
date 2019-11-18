@@ -1,0 +1,145 @@
+*{padding:0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;}
+    html{
+      scroll-behavior: smooth
+    }
+    .nome {
+        font-size: 40px;
+    }
+    .sub {
+        font-size: 25px;
+    }
+    .topnav {
+        background-color: lightsalmon;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        width: 100%;
+          }   
+    .topnav a {
+             float:left;
+             color: rgb(253, 238, 236);
+             text-align: center;
+             padding: 14px 16px;
+             text-decoration: none;
+             font-size: 17px;
+    
+          }
+    .topnav.a.active {
+        background-color: darksalmon;
+        
+    }
+    .topnav a:hover {
+        background-color: lightcoral;
+        color: rgb(250, 219, 207);
+      }
+
+    .sobre-nos {
+        text-align: center;
+        color: lightsalmon;
+        font-size: 25px;
+        
+    }
+    html
+    .conteudo-sobrenos{
+        text-align: center;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .sabores{
+      text-align: center;
+      color: lightsalmon;
+      font-size: 25px;
+    }
+    
+    .conteudo-sabores1{
+      text-align: left;
+      color: black;
+      height:auto;
+      width: 20vw;
+      font-size: 20px;
+      margin-left: 20vw;
+    }
+    .conteudo-sabores2{
+      text-align: left;
+      color: black;
+      height:auto;
+      width: 20vw;
+      font-size: 20px;
+      margin-left: 45vw;
+      margin-top: -119px;
+    }
+    .conteudo-sabores3{
+      text-align: left;
+      color: black;
+      height:auto;
+      width: 20vw;
+      font-size: 20px;
+      margin-left: 70vw;
+      margin-top: -119px;
+    }
+    .slideshow {
+      max-width:1222px;
+      position: relative;
+      margin-top: 0px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    footer{
+      background-color: lightsalmon;
+      margin-top: 5px;
+      padding: 10px 0;
+    
+    }
+    footer a{
+      text-decoration:none;
+      color: antiquewhite;
+    }
+    .topo{
+      text-align: center;
+      color: rgb(250, 219, 207);
+    }
+    .mySlides {
+        display: none;
+      }
+      
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+    
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: skyblue;
+      }
+     
